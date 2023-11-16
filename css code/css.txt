@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+.continer{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* start team */
+.team{
+    margin-top: 30px;
+}
+.team .continer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+}
+.team .continer .box {
+    line-height: 2;
+}
+.team .continer .box p{
+    color: #777;
+}
+.team .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+    margin: 10px
+}
+.team .content .box img{
+    width: 100%;
+}
+.team .info{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team .info .text{
+    line-height: 2;
+    margin-left: 5px;
+}
+.team .info .text p{
+    color: #777;
+    margin-bottom: 30px;
+}
+.team .info .text h2{
+    color: black;
+    font-weight: bold;
+}
+.team .info .text a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    transition: 0.2a;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.team .info .text a:hover{
+    background-color: red;
+}
+.team .info .parttwo{
+    line-height: 2;
+}
+.team .info .parttwo .box {
+    background-color: #FD871F;
+    color: white;
+    padding: 10px;
+    margin:5px;
+
+}
+.team .info .parttwo h3{
+    background-color: #ddd;
+    margin: 4px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+@media (max-width:767px) {
+    .team .info{
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .team .info .parttwo .box{
+        margin-top: 30px;
+    }
+    
+}
+/* end team */
+/* start project */
+.project{
+    margin-top: 30px;
+}
+.project .continer{
+    line-height: 2;
+}
+.project .continer p{
+    color: #777;
+    width: 100%;
+}
+.project .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+    margin: 10px
+}
+.project .content .card img{
+    width: 100%;
+}
+.project .content .card{
+    line-height: 2;
+}
+.project .content .card h2 span{
+    color: #777;
+}
+.project .content .card a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.project .content .card a i{
+    margin-left: 10px;
+    font-size: 15px;
+}
+/* end project */
+/* start card */
+.card{
+    margin-top: 30px;
+}
+.card .continer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+    margin: 10px;
+    line-height: 2;
+}
+.card .continer .card{
+    background-color: #ddd;
+}
+.card .continer .card ul{
+    list-style-type: none;
+}
+.card .continer .card{
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card .continer .card::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0,20%);
+    left: 0;
+}
+.card .continer .card:hover:before{
+    width: 100%;
+}
+.card  .continer  .card ul li{
+    margin-left: 10px;
+}
+.card .continer .card ul li i{
+    margin-right: 5px;
+}
+.card .continer .card a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #ccc;
+    padding: 10px;
+}
+.card .continer .card a i{
+    margin-left: 10px;
+}
+@media (max-width:767px) {
+    .card .continer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        gap: 50px;
+        margin: 10px;
+        line-height: 2;
+    }
+    
+}
+/* end card */
+/* start portfilo */
+.portfilo{
+    margin-top: 30px;
+}
+.portfilo .continer{
+    line-height: 2;
+}
+.portfilo .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+    margin: 10px
+
+}
+@media (min-width:0) and (max-width:575px) {
+    .portfilo .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        gap: 20px;
+        margin: 0px;
+    }
+    .portfilo .content img{
+        width: 92%;
+    }
+    
+}
+@media (max-width:767px) {
+    .portfilo .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 50px;
+        margin: 10px auto;
+        line-height: 2;
+    }
+    .portfilo .content img{
+        width: 97%;
+    }
+    
+}
+@media (min-width:768px) and (max-width:991px) {
+    .portfilo .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+        gap: 50px;
+        margin: 10px;
+        line-height: 2;
+    }
+    .portfilo .content img{
+        width: 100%;
+    }
+    
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .portfilo .content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+        gap: 50px;
+        margin: 10px;
+        line-height: 2;
+    }
+    .portfilo .content img{
+        width: 100%;
+    }
+    
+}
+/* end portfilo */
+/* start logo */
+.logo{
+    margin-top: 30px;
+}
+.logo .continer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:768px) {
+    .logo .continer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+@media (max-width:991px) {
+    .logo .continer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+/* end logo */
+/* start service */
+.service{
+    margin-top: 30px;
+}
+.service .continer{
+    line-height: 2;
+}
+.service .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+    margin: 10px
+
+}
+.service .content .box{
+    background-color: #ddd;
+    padding: 10px;
+    line-height: 2;
+    transition: 0.8s;
+}
+.service .content .box:nth-child(2){
+    background-color: #FD871F;
+    color: white;
+}
+.service .content .box:hover{
+    transform: translateY(-20px);
+}
+.service .content .box i{
+    font-size: 25px;
+}
+/* end service */
+/* start footer */
+.footer{
+    margin-top: 30px;
+}
+.footer .continer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 50px;
+    margin: 10px;
+    line-height: 2;
+}
+.footer .continer h2 span{
+    color: #777;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.footer .continer i{
+    margin-right: 10px;
+}
+.footer .continer ul{
+    list-style-type: none;
+}
+.footer .continer ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* end footer */
+/* start end */
+.end{
+    margin-top: 10px;
+    border-top:  solid 1px black;
+}
+.end .continer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.end .continer h2{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.end .continer h3{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media (max-width:767px) {
+    .end .continer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        line-height: 2;
+    }
+    
+}
+/* end end */
